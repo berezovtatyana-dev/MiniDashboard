@@ -7,8 +7,8 @@ export const generateMockData = () => {
     const startDate = new Date(2026, 0, 1);
 
     for (let i=1; i<=1100; i++){
-        const randomCategory = categories[Math.floor(Math.random()*categories.lenth)];
-        const randomStatus = statuses[Math.floor(Math.random()*statuses.lenth)];
+        const randomCategory = categories[Math.floor(Math.random()*categories.length)];
+        const randomStatus = statuses[Math.floor(Math.random()*statuses.length)];
         const randomAmount = Math.floor(Math.random()*10000)+500;
         const date = new Date(startDate.getTime()+Math.random()*30*24*100);
         data.push({

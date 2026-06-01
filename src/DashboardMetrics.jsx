@@ -27,7 +27,7 @@ function DashboardMetrics({filteredData}){
             </div>
             <div style={{border: '3px solid #664'}}>
                 <h3>Процент выполнения</h3>
-                <p>{metrics.successRate}</p>
+                <p>{metrics.successRate}%</p>
             </div>
         </div>
     );
