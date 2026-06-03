@@ -109,7 +109,7 @@ function AnaliticTable({data}){
             style={{maxHeight:'400px', overflowY: 'scroll', border:''}}>
                 <table style={{tableLayout:'fixed', width:'100%', borderCollapse:'collapse'}}>
                     <thead>
-                        <tr style={{position:'sticky', top:0, zIndex:1, backgroundColor:'gray'}}>
+                        <tr style={{position:'sticky', top:0, zIndex:1, backgroundColor:'pink'}}>
                             <th ref={thTitleRef} style={{width: colWidth.title, position: 'relative', border:'1px solid black'}}>
                                 Название задачи
                                 <div style={resizeStyle} onMouseDown={(e)=>handleMouseDown(e, 'title', thTitleRef.current)} />
@@ -126,9 +126,8 @@ function AnaliticTable({data}){
                                 Статус
                                 <div style={resizeStyle} onMouseDown={(e)=>handleMouseDown(e, 'status', thStatusRef.current)} />
                             </th>
-                            <th style={{width: colWidth.status, position: 'relative', border:'1px solid black'}}>
+                            <th style={{border:'1px solid black'}}>
                                 Дата
-                                <div />
                             </th>
                         </tr>
                     </thead>
